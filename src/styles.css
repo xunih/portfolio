@@ -237,13 +237,17 @@ svg#clouds {
     font-family: "Bradley Hand";
 }
 
-.font #title {
+.font #h1 {
     font-size: 10vh;
 }
 
 .font #button {
     font-size: 25px;
     color: white;
+}
+
+.font #h2 {
+    font-size: 5vh;
 }
 
 .toolbar {
@@ -264,7 +268,7 @@ svg#clouds {
     margin-left: 5px;
     padding: 40px;
     font-family: "Bradley Hand";
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .toolbar img {
