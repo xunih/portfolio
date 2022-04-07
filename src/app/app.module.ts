@@ -1,23 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSmile } from '@fortawesome/free-solid-svg-icons';
+import { HomeComponent } from './home/home.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutMeComponent,
+    HomeComponent,
+    ProjectPageComponent,
+    ContactMeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([{ path: '', component: HomeComponent },
+    { path: 'about-me', component: AboutMeComponent },
+    { path: 'projects', component: ProjectPageComponent },
+    { path: 'contact-me', component: ContactMeComponent }]),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor() {
-    library.add(faSmile);
   }
 }
