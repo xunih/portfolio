@@ -1,3 +1,59 @@
-<div class="toolbar" role="banner">
-  <button id="text" [routerLink]="'/'" class="button" >Back</button>
+<style>
+  .list {
+    list-style: none;
+  }
+
+  span {
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="content" role="main">
+  <div class="toolbar" role="banner">
+    <button id="text" [routerLink]="'/'" class="button">Back</button>
+  </div>
+  <span class="font"><h1 id="h1">Me</h1></span>
+  <div>
+    <span class="font"
+      ><h2 id="h2">About Me</h2>
+      <p class="left" id="text">
+        I am a master student studying interactive media technology at KTH. I am
+        passionate about ineraction design, front-end development, machine
+        learning, and how to use technologies to help improve women's health. In
+        my spare time, I like listening to music, baking, taking part in
+        voluntary works, and going to concerts!
+      </p>
+    </span>
+
+    <span class="font" 
+      ><h2 id="h2">Education</h2>
+      <ul id="h3">
+        Bachelor's Degree
+        <li class="list" id="text">
+          Software Engineering and Management, University of Gothenburg, 2018 -
+          2021
+        </li>
+        Master's Degree
+        <li class="list" id="text">
+          Interactive Media Technology, KTH Royal Insitute of Technology, 2021 -
+          2023
+        </li>
+      </ul>
+    </span>
+    <span class="font"
+      ><h2 id="h2">Work</h2>
+      <ul id="h3">
+        Teaching Assistant
+        <li class="list" id="text">
+          Data Structures and Algorithms, University of Gothenburg, 2020.1 -
+          2020.3
+        </li>
+        Research Internship
+        <li class="list" id="text">
+          Digital Women’s Health research group, KTH Royal Insitute of
+          Technology, 2022.3 - Current
+        </li>
+      </ul></span
+    >
+  </div>
 </div>

@@ -232,7 +232,6 @@ svg#clouds {
     width: 1920px;
 }
 
-/* Responsive Styles */
 .font {
     font-family: "Bradley Hand";
 }
@@ -248,6 +247,14 @@ svg#clouds {
 
 .font #h2 {
     font-size: 5vh;
+}
+
+.font #h3 {
+    font-size: 4vh;
+}
+
+.font #text {
+    font-size: 3vh;
 }
 
 .toolbar {
