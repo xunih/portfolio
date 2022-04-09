@@ -26,6 +26,10 @@ p {
     flex: 1;
 }
 
+.list {
+    list-style: none;
+  }
+
 .content {
     display: flex;
     margin: 82px auto 32px;
