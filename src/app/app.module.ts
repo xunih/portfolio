@@ -20,7 +20,6 @@ import { DialogPageTwoComponent } from './dialog-page-two/dialog-page-two.compon
     ProjectPageComponent,
     ContactMeComponent,
     DialogPageComponent,
-    DialogPageTwoComponent,
     DialogPageTwoComponent
   ],
   imports: [

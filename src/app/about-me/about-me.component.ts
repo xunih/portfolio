@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogPageTwoComponent } from '../dialog-page-two/dialog-page-two.component';
 import { DialogPageComponent } from '../dialog-page/dialog-page.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-me',
@@ -10,7 +11,7 @@ import { DialogPageComponent } from '../dialog-page/dialog-page.component';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public router: Router) { }
 
   ngOnInit(): void {
   }
@@ -22,12 +23,21 @@ export class AboutMeComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+    this.router.events
+      .subscribe(() => {
+        dialogRef.close();
+      });
   }
+  
   openDialogTwo() {
     this.dialog.closeAll();
     const dialogRef = this.dialog.open(DialogPageTwoComponent);
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+    this.router.events
+      .subscribe(() => {
+        dialogRef.close();
+      });
   }
 }
