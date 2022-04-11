@@ -11,6 +11,7 @@ import { ProjectPageComponent } from './project-page/project-page.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { DialogPageComponent } from './dialog-page/dialog-page.component';
 import { DialogPageTwoComponent } from './dialog-page-two/dialog-page-two.component';
+import { DialogProjectOneComponent } from './dialog-project-one/dialog-project-one.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { DialogPageTwoComponent } from './dialog-page-two/dialog-page-two.compon
     ProjectPageComponent,
     ContactMeComponent,
     DialogPageComponent,
-    DialogPageTwoComponent
+    DialogPageTwoComponent,
+    DialogProjectOneComponent,
+    DialogProjectOneComponent
   ],
   imports: [
     BrowserAnimationsModule,

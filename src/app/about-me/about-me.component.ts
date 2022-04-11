@@ -16,7 +16,6 @@ export class AboutMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   openDialog() {
     this.dialog.closeAll();
     const dialogRef = this.dialog.open(DialogPageComponent);
@@ -28,7 +27,7 @@ export class AboutMeComponent implements OnInit {
         dialogRef.close();
       });
   }
-  
+
   openDialogTwo() {
     this.dialog.closeAll();
     const dialogRef = this.dialog.open(DialogPageTwoComponent);
