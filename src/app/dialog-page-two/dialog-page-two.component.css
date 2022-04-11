@@ -3,13 +3,13 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-  }
+}
 
-  .circle-link {
-    height: 80px;
-    width: 400px;
+.circle-link {
+    height: 20px;
+    width: 60px;
     border-radius: 4px;
-    margin: 40px;
+    margin: 5px;
     background-color: black;
     border: 1px solid #eeeeee;
     display: flex;
@@ -23,4 +23,17 @@
 .circle-link:hover {
     transform: translateY(-0.25rem);
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttonHere {
+    font-size: 20px;
+    color: white;
+}
+
+.content {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%
 }

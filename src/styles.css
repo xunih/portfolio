@@ -261,6 +261,31 @@ svg#clouds {
     font-size: 3vh;
 }
 
+.font2{
+    font-family: sans-serif;
+}
+
+.font2 #h1 {
+    font-size: 10vh;
+}
+
+.font2 #button {
+    font-size:40px;
+    color: white;
+}
+
+.font2 #h2 {
+    font-size: 5vh;
+}
+
+.font2 #h3 {
+    font-size: 4vh;
+}
+
+.font2 #text {
+    font-size: 3vh;
+}
+
 .toolbar {
     position: fixed;
     top: 0;
