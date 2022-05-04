@@ -1,14 +1,14 @@
 <!--a href="https://drive.google.com/file/d/1CSPOS3s2Vsjeaxz2RWZXaSZe84m-z6so/view?usp=sharing">Get File</a-->
 <div class="container">
-    <iframe
-      src="https://player.vimeo.com/video/664178098"
-      width="600px"
-      height="500px"
-      class="center"
-    >
-    </iframe>
-    <div class="content">
-      <!--mat-dialog-content class="mat-typography">
+  <iframe
+    src="https://player.vimeo.com/video/664178098"
+    width="100%"
+    height="600px"
+    class="center"
+  >
+  </iframe>
+  <div class="content">
+    <!--mat-dialog-content class="mat-typography">
         <h3 class="font2" id="h2">
           Group Project of DM2601 Media Technology and Interaction Design
         </h3>
@@ -18,13 +18,9 @@
           recharg and relax.
         </p>
       </mat-dialog-content-->
-      <mat-dialog-actions>
-        <div class="card-container">
-          <button class="circle-link" mat-dialog-close>
-            <span class="font"><h3 class="buttonHere">Close</h3></span>
-          </button>
-        </div>
-      </mat-dialog-actions>
-    </div>
+    <mat-dialog-actions>
+      <button mat-dialog-close>Close</button>
+      <button [routerLink]="'/'">Details</button>
+    </mat-dialog-actions>
   </div>
-  
+</div>
