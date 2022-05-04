@@ -28,11 +28,11 @@ p {
 
 .list {
     list-style: none;
-  }
+}
 
 .content {
     display: flex;
-    margin: 82px auto 32px;
+    margin: 100px auto 32px;
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
@@ -56,14 +56,14 @@ svg.material-icons:not(:last-child) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 200px;
 }
 
 .card {
     all: unset;
     border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: black;
+    border: none;
+    background-color: transparent;
     height: 40px;
     width: 200px;
     margin: 0 8px 16px;
@@ -83,6 +83,7 @@ svg.material-icons:not(:last-child) {
 .card.card-small {
     height: 20px;
     width: 170px;
+    color: transparent;
 }
 
 .card-container .card:not(.highlight-card) {
@@ -176,8 +177,8 @@ a:hover {
     width: 40px;
     border-radius: 40px;
     margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
+    background-color: transparent;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,20 +238,20 @@ svg#clouds {
 }
 
 .font {
-    font-family: "Bradley Hand";
+    font-family: Garamond, serif;
 }
 
 .font #h1 {
-    font-size: 10vh;
+    font-size: 40px;
 }
 
 .font #button {
     font-size: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .font #h2 {
-    font-size: 5vh;
+    font-size: 30px;
 }
 
 .font #h3 {
@@ -261,8 +262,8 @@ svg#clouds {
     font-size: 3vh;
 }
 
-.font2{
-    font-family: sans-serif;
+.font2 {
+    font-family: Garamond, serif;;
 }
 
 .font2 #h1 {
@@ -270,7 +271,7 @@ svg#clouds {
 }
 
 .font2 #button {
-    font-size:40px;
+    font-size: 40px;
     color: white;
 }
 
@@ -301,10 +302,10 @@ svg#clouds {
 .toolbar #text {
     text-align: center;
     margin-top: auto;
-    margin-left: 5px;
+    margin-left: 10px;
     padding: 40px;
-    font-family: "Bradley Hand";
-    font-size: 30px;
+    font-family: "Garamond, serif";
+    font-size: 25px;
 }
 
 .toolbar img {
@@ -366,4 +367,29 @@ button {
         display: none;
         visibility: hidden;
     }
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #ffeaea
+    }
+
+    33% {
+        background-color: #ffe1e1
+    }
+
+    66% {
+        background-color: #ffd8d8
+    }
+
+    100% {
+        background-color: #ffc3c3
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }

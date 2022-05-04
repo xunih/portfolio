@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .circle-link {
@@ -27,12 +27,12 @@
 
 .buttonHere {
     font-size: 20px;
-    color: white;
+    color: rgb(7, 6, 6);
 }
 
 .content {
     position: fixed;
-    top: 75%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%
