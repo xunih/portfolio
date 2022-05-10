@@ -1,27 +1,44 @@
-<!--a href="https://drive.google.com/file/d/1CSPOS3s2Vsjeaxz2RWZXaSZe84m-z6so/view?usp=sharing">Get File</a-->
-<div class="container">
-  <iframe
-    src="../../assets/annotated-thesis_XuniHuang-2.pdf"
-    width="100%"
-    height="600px"
-    class="center"
-  >
-  </iframe>
-  <div class="content">
-    <!--mat-dialog-content class="mat-typography">
-        <h3 class="font2" id="h2">
-          Group Project of DM2601 Media Technology and Interaction Design
-        </h3>
-        <p class="font2" id="text">
-          The theme for the project is a more introverted world in 10 years. Our
-          team prototyped a well-being app Oasis to help international students
-          recharg and relax.
-        </p>
-      </mat-dialog-content-->
-
-    <mat-dialog-actions>
-      <button mat-dialog-close>Close</button>
-      <button [routerLink]="'/'">Details</button>
-    </mat-dialog-actions>
+<div class="content" role="main">
+  <div class="toolbar" role="banner">
+    <button id="text" [routerLink]="'/projects'" class="button">Back</button>
+  </div>
+  <div class="about" class="font">
+    <h1 id="h1">
+      Detecting Inconsistencies of Safety Artifacts with Natural Language
+      Processing
+    </h1>
+  </div>
+  <div>
+    <span class="font2">
+      <p class="about" id="text">
+        My bachelor thesis for the programme Software Engineering and
+        Management. In this thesis project, investigiated if Natural Language Processing techniques
+        may help detect textual inconsistencies between safety artefacts.
+      </p>
+      <p id="text"><b>Techqniues: </b>Python, Natural Language Processing</p>
+      <p class="about" id="text">
+        <b>Abstarct:</b> This paper investigates a method that helps detect
+        inconsistencies between safety-critical systems’ textual safety
+        artifacts that safety cases rely on by involving NLP techniques. A
+        design science research study was conducted in three iterations. I
+        evaluate the method by conducting different experiments. The designed
+        artifact identifies inconsistencies between different texts that are
+        connected by trace links by checking similarities and word vectors of
+        the texts. The results indicate that involving NLP technique word
+        embedding can help with consistency classification. In conclusion, NLP
+        techniques may help detect inconsistencies between safety artifacts that
+        safety cases rely on, which is helpful to reduce the risk of system
+        failures.
+      </p>
+    </span>
+  </div>
+  <div class="card-container">
+    <a
+      class="card card-small"
+      tabindex="0"
+      href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:c158aa4e-564f-3c02-91a5-081ce3e7ab5d"
+    >
+      <span class="font"><h3 id="button">Read More</h3></span>
+    </a>
   </div>
 </div>

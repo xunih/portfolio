@@ -42,7 +42,14 @@ import { MenstrualHealthComponent } from './menstrual-health/menstrual-health.co
     RouterModule.forRoot([{ path: '', component: HomeComponent },
     { path: 'about-me', component: AboutMeComponent },
     { path: 'projects', component: ProjectPageComponent },
-    { path: 'contact-me', component: ContactMeComponent }]),
+    { path: 'contact-me', component: ContactMeComponent },
+    { path: 'menstrual-health-study', component: MenstrualHealthComponent },
+    { path: 'oasis', component: OasisComponent },
+    { path: 'smart-car', component: DialogProjectOneComponent },
+    { path: 'moody', component: MoodyComponent},
+    { path: 'bachelor-thesis', component: ThesisComponent },
+    { path: 'racing-game', component: RacingGameComponent}]),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,37 +6,39 @@
   <span class="font"><h1 id="h1">Project Work</h1></span>
 
   <div class="card-container">
-    <button class="card card-small" tabindex="0" (click)="openDialogCar()">
+    <button class="card card-small" tabindex="0" [routerLink]="'/smart-car'">
       <span class="font"><h3 id="button">Not So Smart Arduino Car</h3></span>
     </button>
 
-    <button class="card card-small" tabindex="0" (click)="openDialogOasis()">
+    <button class="card card-small" tabindex="0" [routerLink]="'/oasis'">
       <span class="font"><h3 id="button">Oasis Well-being App</h3></span>
+    </button>
+
+    <button class="card card-small" tabindex="0" [routerLink]="'/racing-game'">
+      <span class="font"><h3 id="button">MultiVroom Racing Game</h3></span>
+    </button>
+
+    <button class="card card-small" tabindex="0" [routerLink]="'/moody'">
+      <span class="font"><h3 id="button">Moody Art & Music App</h3></span>
     </button>
 
     <button
       class="card card-small"
       tabindex="0"
-      (click)="openDialogRacingGame()"
+      [routerLink]="'/bachelor-thesis'"
     >
-      <span class="font"><h3 id="button">MultiVroom Racing Game</h3></span>
-    </button>
-
-    <button class="card card-small" tabindex="0" (click)="openDialogMoody()">
-      <span class="font"><h3 id="button">Moody Art & Music App</h3></span>
-    </button>
-
-    <button class="card card-small" tabindex="0" (click)="openDialogThesis()">
       <span class="font"><h3 id="button">Bachelor Thesis Project</h3></span>
     </button>
 
     <button
       class="card card-small"
       tabindex="0"
-      (click)="openDialogHealth('hello')"
+      [routerLink]="'/menstrual-health-study'"
     >
       <span class="font"
-        ><h3 id="button">How Technology Can Help Menstrual Health</h3></span
+        ><h3 id="button">
+          How Technology Can Help With Menstrual Health
+        </h3></span
       >
     </button>
   </div>

@@ -1,26 +1,37 @@
-<!--a href="https://drive.google.com/file/d/1CSPOS3s2Vsjeaxz2RWZXaSZe84m-z6so/view?usp=sharing">Get File</a-->
-<div class="container">
-  <iframe
-    src="https://www.youtube.com/embed/DHMe0ubszqI"
-    width="100%"
-    height="600px"
-    class="center"
-  >
-  </iframe>
-  <div class="content">
-    <!--mat-dialog-content class="mat-typography">
-        <h3 class="font2" id="h2">
-          Group Project of DM2601 Media Technology and Interaction Design
-        </h3>
-        <p class="font2" id="text">
-          The theme for the project is a more introverted world in 10 years. Our
-          team prototyped a well-being app Oasis to help international students
-          recharg and relax.
-        </p>
-      </mat-dialog-content-->
-    <mat-dialog-actions>
-      <button mat-dialog-close>Close</button>
-      <button [routerLink]="'/'">Details</button>
-    </mat-dialog-actions>
+<div class="content" role="main">
+  <div class="toolbar" role="banner">
+    <button id="text" [routerLink]="'/projects'" class="button">Back</button>
+  </div>
+  <div class="about" class="font">
+    <h1 id="h1">Arduino Mini Smart Car</h1>
+  </div>
+  <div>
+    <span class="font2">
+      <p class="about" id="text">
+        In this project for course
+        <i>DIT112 Mini Project: System Development</i>. We developed a mobile
+        app that enables users to control an Arduino car. The smart car can be
+        voice-controlled, automatically detects obstacles, and do line
+        following. I was responsible for programming the smart car.
+      </p>
+      <p id="text">
+        <b>Techniques: </b>Arduino, Java, Arduino, Android Studio, PCB design
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/DHMe0ubszqI"
+        width="100%"
+        height="500px"
+      >
+      </iframe>
+    </span>
+  </div>
+  <div class="card-container">
+    <a
+      class="card card-small"
+      tabindex="0"
+      href="https://github.com/xunih/group-06"
+    >
+      <span class="font"><h3 id="button">Git Repository</h3></span>
+    </a>
   </div>
 </div>
